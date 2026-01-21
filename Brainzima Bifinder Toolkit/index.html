@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bifinder Big Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styel.css">
+</head>
+
+<body>
+
+    <main class="container-fluid">
+
+        <!-- Good feature night and  light st  -->
+        <div class="theme-switch" title="Toggle Theme" aria-label="Toggle Theme">
+            <i class="fas fa-moon"></i>
+        </div>
+        <!-- Good feature night and  light st  -->
+
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="col-md-3 col-lg-2 d-md-block app-sidebar" aria-label="Main navigation">
+                    <h5><i class="fas fa-rocket me-2"></i>Bifinder Pro</h5>
+                    <div class="nav flex-column">
+                        <a href="#Password-Generator" class="nav-link active" aria-current="page">
+                            <i class="fas fa-key"></i> Password Generator
+                        </a>
+                        <a href="#Todo-List" class="nav-link">
+                            <i class="fas fa-tasks"></i> Todo List
+                        </a>
+                        <a href="#Note-App" class="nav-link">
+                            <i class="fas fa-sticky-note"></i> Notes
+                        </a>
+                        <a href="#Secure-Vault" class="nav-link">
+                            <i class="fas fa-lock"></i> Secure Vault
+                        </a>
+                        <a href="#Planner" class="nav-link">
+                            <i class="fas fa-calendar-alt"></i> Planner
+                        </a>
+                        <a href="#Settings" class="nav-link">
+                            <i class="fas fa-cog"></i> Settings
+                        </a>
+                    </div>
+                </nav>
+
+                <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                    <section id="Password-Generator" class="main-content">
+                        <div class="container py-4">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h2 class="mb-0"><i class="fas fa-key me-2"></i>Password Generator</h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="mb-4">
+                                                <label for="password" class="form-label">Your Secure Password</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control password-display"
+                                                        id="password" readonly
+                                                        placeholder="Your secure password will appear here"
+                                                        aria-describedby="copy-btn">
+                                                    <button class="btn copy-btn" type="button" id="copy-btn"
+                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        title="Copy to clipboard" aria-label="Copy password">
+                                                        <i class="fas fa-copy"></i>
+                                                    </button>
+                                                </div>
+                                                <div id="password-error" class="error-message">Please select at least
+                                                    one character type.</div>
+                                                <div class="password-strength mt-2">
+                                                    <div class="progress" style="height: 8px;">
+                                                        <div class="progress-bar" role="progressbar" style="width: 0%;"
+                                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-muted mt-1 d-block">Password strength: <span
+                                                            id="strength-text">Generate a password</span></small>
+                                                </div>
+                                            </div>
+                                            <div class="mb-4">
+                                                <label for="length-slider"
+                                                    class="form-label d-flex justify-content-between">
+                                                    <span>Password Length</span>
+                                                    <span class="badge bg-primary" id="length-value">12</span>
+                                                </label>
+                                                <input type="range" class="form-range" id="length-slider" min="6"
+                                                    max="100" value="12" aria-label="Password length slider">
+                                            </div>
+                                            <div class="row mb-4">
+                                                <div class="col-md-6">
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input" type="checkbox" id="uppercase"
+                                                            checked aria-label="Include uppercase letters">
+                                                        <label class="form-check-label" for="uppercase">
+                                                            <i class="fas fa-font me-2 text-primary"></i>Uppercase (A-Z)
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input" type="checkbox" id="lowercase"
+                                                            checked aria-label="Include lowercase letters">
+                                                        <label class="form-check-label" for="lowercase">
+                                                            <i
+                                                                class="fas fa-text-height me-2 text-primary"></i>Lowercase
+                                                            (a-z)
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input" type="checkbox" id="numbers"
+                                                            checked aria-label="Include numbers">
+                                                        <label class="form-check-label" for="numbers">
+                                                            <i class="fas fa-hashtag me-2 text-primary"></i>Numbers
+                                                            (0-9)
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input" type="checkbox" id="symbols"
+                                                            checked aria-label="Include symbols">
+                                                        <label class="form-check-label" for="symbols">
+                                                            <i class="fas fa-exclamation me-2 text-primary"></i>Symbols
+                                                            (@#$%)
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary w-100 py-3" id="generate-btn">
+                                                <i class="fas fa-sync-alt me-2"></i>Generate Secure Password
+                                            </button>
+                                            <div class="mt-4 pt-2 border-top">
+                                                <h6 class="mb-3 text-primary"><i
+                                                        class="fas fa-info-circle me-2"></i>Password Tips</h6>
+                                                <ul class="small text-muted">
+                                                    <li>Use a mix of characters for stronger passwords</li>
+                                                    <li>Aim for at least 12 characters in length</li>
+                                                    <li>Consider using a password manager for secure storage</li>
+                                                    <li>Never reuse passwords across different accounts</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="Todo-List" class="main-content d-none">
+                        <div class="container py-4">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h2 class="mb-0"><i class="fas fa-tasks me-2"></i>Todo List</h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <form id="todo-form" class="mb-4">
+                                                <div class="row g-3">
+                                                    <div class="col-md-6">
+                                                        <label for="todo-user" class="form-label">Your Name</label>
+                                                        <div class="input-group">
+                                                            <span class="input-group-text"><i
+                                                                    class="fas fa-user"></i></span>
+                                                            <input type="text" class="form-control" id="todo-user"
+                                                                placeholder="Enter your name" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="todo-email" class="form-label">Email</label>
+                                                        <div class="input-group">
+                                                            <span class="input-group-text"><i
+                                                                    class="fas fa-envelope"></i></span>
+                                                            <input type="email" class="form-control" id="todo-email"
+                                                                placeholder="Enter your email" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="todo-work" class="form-label">Task</label>
+                                                        <div class="input-group">
+                                                            <span class="input-group-text"><i
+                                                                    class="fas fa-clipboard-list"></i></span>
+                                                            <input type="text" class="form-control" id="todo-work"
+                                                                placeholder="What needs to be done?" required>
+                                                            <button type="submit" class="btn btn-accent">
+                                                                <i class="fas fa-plus-circle me-2"></i>Add
+                                                            </button>
+                                                        </div>
+                                                        <div id="todo-error" class="error-message">Please fill out all
+                                                            fields.</div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div class="todos-area">
+                                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                                    <h5 class="mb-0"><i class="fas fa-list-ul me-2"></i>Your Tasks</h5>
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-outline-danger delete-all"
+                                                            aria-label="Clear all tasks">
+                                                            <i class="fas fa-trash-alt me-2"></i>Clear All
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <ul id="todo-list" class="list-unstyled" role="list"
+                                                    aria-label="Todo list">
+                                                    <!-- Todo items added dynamically -->
+                                                </ul>
+                                            </div>
+                                            <div class="text-muted mt-3">
+                                                <span id="todo-count">0</span> tasks
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="Note-App" class="main-content d-none">
+                        <div class="container py-4">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h2 class="mb-0"><i class="fas fa-sticky-note me-2"></i>Notes</h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <form id="note-form" class="mb-5">
+                                                <div class="mb-3">
+                                                    <label for="note-title" class="form-label">Title</label>
+                                                    <input type="text" class="form-control" id="note-title"
+                                                        placeholder="Note title" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="note-content" class="form-label">Content</label>
+                                                    <textarea class="form-control" id="note-content" rows="5"
+                                                        placeholder="Write your note here..." required></textarea>
+                                                </div>
+                                                <div id="note-error" class="error-message">Please fill out all fields.
+                                                </div>
+                                                <button type="submit" class="btn btn-accent w-100 py-3">
+                                                    <i class="fas fa-save me-2"></i>Save Note
+                                                </button>
+                                            </form>
+                                            <div class="notes-area">
+                                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                                    <h5 class="mb-0"><i class="fas fa-book-open me-2"></i>Your Notes
+                                                    </h5>
+                                                    <button class="btn btn-outline-danger delete-all"
+                                                        aria-label="Delete all notes">
+                                                        <i class="fas fa-trash-alt me-2"></i>Delete All
+                                                    </button>
+                                                </div>
+                                                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
+                                                    id="note-list" role="list" aria-label="Notes list">
+                                                    <!-- Note cards added dynamically -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="Secure-Vault" class="main-content d-none">
+                        <div class="container py-4">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h2 class="mb-0"><i class="fas fa-lock me-2"></i>Secure Vault</h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Secure Vault feature coming soon!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="Planner" class="main-content d-none">
+                        <div class="container py-4">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h2 class="mb-0"><i class="fas fa-calendar-alt me-2"></i>Planner</h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Planner feature coming soon!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="Settings" class="main-content d-none">
+                        <div class="container py-4">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h2 class="mb-0"><i class="fas fa-cog me-2"></i>Settings</h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Settings feature coming soon!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+        <!-- Good feature st  -->
+        <div class="fab" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick Actions"
+            aria-label="Quick Actions">
+            <i class="fas fa-bolt"></i>
+        </div>
+        <div class="fab-menu">
+            <div class="fab-item" data-section="Password-Generator" title="Generate Password"
+                aria-label="Generate Password">
+                <i class="fas fa-key"></i>
+            </div>
+            <div class="fab-item" data-section="Todo-List" title="Add Task" aria-label="Add Task">
+                <i class="fas fa-tasks"></i>
+            </div>
+            <div class="fab-item" data-section="Note-App" title="Add Note" aria-label="Add Note">
+                <i class="fas fa-sticky-note"></i>
+            </div>
+        </div>
+        <!-- Good feature st  -->
+
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
