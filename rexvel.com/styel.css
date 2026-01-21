@@ -1,0 +1,325 @@
+/* Home Page Endss*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    font-size: 10pt;
+    margin: 10px;
+}
+
+/* nav btn */
+.custom-btn {
+    background-color: #0d6efd;
+    color: rgb(255, 219, 253);
+    border: none;
+    padding: 10px 22px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.2);
+}
+
+.custom-btn:hover {
+    background-color: #6c9ce3;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(178, 255, 160, 0.4);
+}
+
+h1 {
+    line-height: 1.3;
+}
+
+.btn-primary {
+    background-color: #6C63FF;
+    border-color: #6C63FF;
+}
+
+.btn-primary:hover {
+    background-color: #594ae2;
+    border-color: #594ae2;
+}
+
+.btn-outline-primary:hover {
+    background-color: #6C63FF;
+    color: #fff;
+}
+
+.text-primary {
+    color: #6C63FF !important;
+}
+
+.text-secondary {
+    color: #444;
+    font-size: 1.05rem;
+}
+
+.service-card {
+    background-color: white;
+    color: #333;
+    transition: all 0.4s ease;
+}
+
+.service-card:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-10px);
+}
+
+.service-card:hover .card-number,
+.service-card:hover .card-title,
+.service-card:hover .card-text {
+    color: white;
+    cursor: pointer;
+}
+
+.card-number {
+    color: #6C63FF;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: color 0.4s ease;
+}
+
+.card-title {
+    font-weight: 600;
+    margin-bottom: 15px;
+    transition: color 0.4s ease;
+}
+
+.card-text {
+    transition: color 0.4s ease;
+    font-size: 12pt;
+    color: #02010155;
+}
+
+.card {
+    text-align: center;
+    border: none;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.478);
+    margin: 10px;
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: #5a67d8;
+    margin-bottom: 10px;
+}
+
+.card-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #5a67d8;
+}
+
+.card-label {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.crad {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+/* footer */
+.footer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    color: #6c757d;
+}
+
+.footer h5 {
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    transition: all ease-in-out 0.2s;
+    color: #001aff;
+    border-bottom: 1px dotted rgb(0, 55, 255);
+}
+
+.footer .newsletter input {
+    border: 1px solid #ced4da;
+    border-radius: 50px;
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+.footer .newsletter button {
+    background-color: #051eff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+}
+
+ul>li>a>i {
+    color: #001aff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #6c757d;
+    font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+    color: #5a67d8;
+}
+
+.copyright {
+    border-top: 1px solid #dee2e6;
+    padding-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* footer  end*/
+/* Home Page Endss*/
+/* about sttt*/
+.sir-image {
+    justify-content: center;
+    align-items: center;
+}
+
+/* about end*/
+/*servise stt */
+.text-warning {
+    color: #f5a623 !important;
+}
+
+.text-primary {
+    color: #4b5e9e !important;
+}
+
+.text-danger {
+    color: #ff6f61 !important;
+}
+
+.text-purple {
+    color: #a855f7 !important;
+}
+
+.text-info {
+    color: #4b5e9e !important;
+}
+
+.text-teal {
+    color: #2dd4bf !important;
+}
+
+.text-brown {
+    color: #8b4513 !important;
+}
+
+.text-success {
+    color: #34c759 !important;
+}
+
+.service-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+/*servise end */
+/*Portfoli st*/
+.portfolio-hover {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.portfolio-hover img {
+    transition: transform 0.4s ease-in-out;
+}
+
+.portfolio-hover:hover img {
+    transform: scale(1.1);
+}
+
+/*Portfoli end*/
+/*Career stt */
+.job-banner {
+    max-width: 100%;
+    height: auto;
+}
+
+li {
+    list-style: none;
+}
+
+/*Career end */
+/* Contact st  */
+.Contact-info-card {
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.34);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Contact-info-card i {
+    font-size: 24px;
+    color: #1f22f7;
+    margin-bottom: 10px;
+}
+
+.Contact-contact-form {
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.401);
+}
+
+/* Contact end  */
+/* Apply for Job stt  */
+.ApplyJob-form-section {
+    background: #fffaff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.434);
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.ApplyJob-form-label {
+    font-weight: 600;
+}
+
+.ApplyJob-form-text {
+    font-size: 12px;
+    color: #3b454d;
+}
+
+.ApplyJob-btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+/* Apply for Job end  */
