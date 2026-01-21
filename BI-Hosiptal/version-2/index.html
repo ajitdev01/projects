@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bi-Hospital</title>
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ17aLgLTux6kRBlQuMp7oncGfTsB_3nHKzLTVzWOXeQ7WEkX4s1QkujO1yN-BtwHeMeIw&usqp=CAU"
+        type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- header section start  -->
+    <header>
+        <!-- Blue line Upper Hader Line stt  -->
+        <div class="container-fluid bg-primary text-white py-2">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-auto">
+                    <i class="fas fa-phone phone-icon"></i>
+                    <span class="ms-2">+91 78089 82006</span>
+                </div>
+                <div class="col-auto">
+                    <i class="far fa-envelope"></i>
+                    <span class="ms-2">Brainzima@giamil.com</span>
+                </div>
+                <div class="col-auto">
+                    <span class="mx-3">Emergency : +91 78089 82006</span>
+                </div>
+                <div class="col-auto">
+                    <span>+91 62055 26784 / +91 79798 64304</span>
+                </div>
+            </div>
+        </div>
+        <!-- Blue line Upper Hader Line end  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/extras/hospitalLogo.png" alt="Peerless Hospital" height="30"
+                        class="logo-animation">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-primary link-animation" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle link-animation" href="#" id="aboutDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="About Company Overview.html">Company Overview</a>
+                                </li>
+                                <li><a class="dropdown-item" href="About Mission and Vision.html">Mission and Vision</a>
+                                </li>
+                                <li><a class="dropdown-item" href="About Board of Directors.html">Board of Directors</a>
+                                </li>
+                                <li><a class="dropdown-item" href="assets/Pfd/peerless-board-committees.pdf"
+                                        target="_blank">Board of Comnity</a></li>
+                                <li><a class="dropdown-item" href="assets/Pfd/peerless-csr-policy.pdf"
+                                        target="_blank">CSR Policy</a></li>
+                                <li><a class="dropdown-item" href="assets/Pfd/renuneration-policy-phh.pdf"
+                                        target="_blank">REMUNERATION POLICY</a></li>
+                        </li>
+                        <li><a class="dropdown-item" href="About Peerless Group.html">Peerless Group</a>
+                        <li><a class="dropdown-item" href="Anout Career.html">Career</a>
+
+                    </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle link-animation" href="#" id="patientsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Patients
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="patientsDropdown">
+                            <li><a class="dropdown-item" href="patient-guide.html">Patient Guide</a></li>
+                            <li><a class="dropdown-item" href="international-patient.html">International Patient</a>
+                            </li>
+                            <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="book-appointment.html">Book an Appointment</a></li>
+                            <li><a class="dropdown-item" href="case-studies.html">Case Study</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle link-animation" href="#" id="departmentsDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Departments
+                        </a>
+                        <div class="dropdown-menu p-3 w-100" aria-labelledby="departmentsDropdown"
+                            style="min-width: 700px;">
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                                <div class="col">
+                                    <a class="dropdown-item" href="#">Anaesthesiology</a>
+                                    <a class="dropdown-item" href="#">Bariatric & Metabolic Surgery</a>
+                                    <a class="dropdown-item" href="#">Cardiology</a>
+                                    <a class="dropdown-item" href="#">Cardiothoracic Surgery</a>
+                                    <a class="dropdown-item" href="#">Critical Care Medicine</a>
+                                    <a class="dropdown-item" href="#">Dentistry & Maxillofacial Surgery</a>
+                                    <a class="dropdown-item" href="#">Dermatology</a>
+                                    <a class="dropdown-item" href="#">Diabetology & Endocrinology</a>
+                                    <a class="dropdown-item" href="#">Dietetics</a>
+                                    <a class="dropdown-item" href="#">Emergency & 24 Hrs Trauma Care</a>
+                                    <a class="dropdown-item" href="#">Maternity Services & Newborn Care</a>
+                                </div>
+                                <div class="col">
+                                    <a class="dropdown-item" href="#">ENT Head & Neck Surgery</a>
+                                    <a class="dropdown-item" href="#">Gastroenterology</a>
+                                    <a class="dropdown-item" href="#">General Medicine</a>
+                                    <a class="dropdown-item" href="#">Gen & Lap Surgery</a>
+                                    <a class="dropdown-item" href="#">Gynaecology & Obstetrics</a>
+                                    <a class="dropdown-item" href="#">Haematology</a>
+                                    <a class="dropdown-item" href="#">Laboratory Sciences</a>
+                                    <a class="dropdown-item" href="#">Nephrology</a>
+                                    <a class="dropdown-item" href="#">Neurology</a>
+                                    <a class="dropdown-item" href="#">Oncology</a>
+                                </div>
+                                <div class="col">
+                                    <a class="dropdown-item" href="#">Orthopaedics & Traumatology</a>
+                                    <a class="dropdown-item" href="#">Paediatrics & Neonatology</a>
+                                    <a class="dropdown-item" href="#">Physical Medicine</a>
+                                    <a class="dropdown-item" href="#">Plastic Surgery</a>
+                                    <a class="dropdown-item" href="#">Psychiatry</a>
+                                    <a class="dropdown-item" href="#">Radiology & Imaging</a>
+                                    <a class="dropdown-item" href="#">Respiratory Medicine</a>
+                                    <a class="dropdown-item" href="#">Rheumatology</a>
+                                    <a class="dropdown-item" href="#">Urology</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle link-animation" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="emergency.html">Emergency Care</a></li>
+                            <li><a class="dropdown-item" href="surgery.html">Surgical Services</a></li>
+                            <li><a class="dropdown-item" href="diagnostics.html">Diagnostics</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle link-animation" href="#" id="academicsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="academicsDropdown">
+                            <li><a class="dropdown-item" href="research.html">Research</a></li>
+                            <li><a class="dropdown-item" href="training.html">Training Programs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-animation" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-animation" href="news.html">News & Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-animation" href="Blog.html">Blogs</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link link-animation" href="Contact.html">Contact Us</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- header section end  -->
+    <!-- main stt  -->
+    <main>
+        <!-- Hero Section Start -->
+        <section class="hero position-relative">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselId" data-bs-slide-to="0" class="active"
+                        aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselId" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/images/slider/slider1.png" class="d-block w-100" alt="Slide 1">
+                        <div class="carousel-caption d-none d-md-block text-start">
+                            <p class="text-white small">32 Years of Healing and Wellness</p>
+                            <h1 class="display-5 fw-bold">A Legacy of Healing, <span class="text-warning">Hope</span>
+                                and
+                                Health</h1>
+                            <p class="lead">Three decades of exceptional healthcare dedicated to your well-being.</p>
+                            <a href="index.html" class="btn btn-outline-primary mt-3">Know More</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/slider/slider2.png" class="d-block w-100" alt="Slide 2">
+                        <div class="carousel-caption d-none d-md-block text-start">
+                            <p class="text-white small">32 Years of Healing and Wellness</p>
+                            <h1 class="display-5 fw-bold">A Legacy of Healing, <span class="text-warning">Hope</span>
+                                and
+                                Health</h1>
+                            <p class="lead">Three decades of exceptional healthcare dedicated to your well-being.</p>
+                            <a href="index.html" class="btn btn-outline-primary mt-3 ">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <a href="book-appointment.html"
+                class="btn btn-primary position-absolute end-0 top-50 translate-middle-y me-4 d-none d-md-block m-5">
+                Book an Appointment
+            </a>
+            <div class="bg-primary text-white py-2 px-3 mt-2 ticker">
+                <marquee behavior="scroll" direction="left" scrollamount="6">
+                    SESSION IN B.SC NURSING – APPLY TO PEERLESS HOSPITAL & <span class="text-danger">DR</span> NILAM
+                    KUMARI RESEARCH CENTRE | CET COACHING
+                    APPLICATIONS INVITED |
+                </marquee>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+        <!-- Process Section Start -->
+        <section class="process-section py-5 bg-light">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-8">
+                        <div class="mb-4">
+                            <h5 class="text-danger">Simple Process</h5>
+                            <h3 class="text-primary fw-bold">Helping You Stay Strong</h3>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-sm-6 col-md-3">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="assets/images/extras/image1.png" class="card-img-top"
+                                            alt="Online Appointment" />
+                                        <span
+                                            class="position-absolute top-0 start-0 bg-warning text-white rounded-circle d-flex align-items-center justify-content-center step-badge"
+                                            style="margin: -10px;">
+                                            1
+                                        </span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="text-primary fw-semibold">Online Appointment</h5>
+                                        <p class="text-muted">Access healthcare easily with our online booking.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="assets/images/extras/image2.png" class="card-img-top"
+                                            alt="Teleconsultation" />
+                                        <span
+                                            class="position-absolute top-0 start-0 bg-warning text-white rounded-circle d-flex align-items-center justify-content-center step-badge"
+                                            style="margin: -10px;">
+                                            2
+                                        </span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="text-primary fw-semibold">Teleconsultation</h5>
+                                        <p class="text-muted">Consult securely with our healthcare experts online.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="assets/images/extras/image3.png" class="card-img-top"
+                                            alt="Bill Enquiry & Payment" />
+                                        <span
+                                            class="position-absolute top-0 start-0 bg-warning text-white rounded-circle d-flex align-items-center justify-content-center step-badge"
+                                            style="margin: -10px;">
+                                            3
+                                        </span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="text-primary fw-semibold">Bill Enquiry & Payment</h5>
+                                        <p class="text-muted">Simplify healthcare with online payments.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="assets/images/extras/image4.png" class="card-img-top"
+                                            alt="Reports Download" />
+                                        <span
+                                            class="position-absolute top-0 start-0 bg-warning text-white rounded-circle d-flex align-items-center justify-content-center step-badge"
+                                            style="margin: -10px;">
+                                            4
+                                        </span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="text-primary fw-semibold">Reports Download</h5>
+                                        <p class="text-muted">Get your investigation reports with just one click.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card h-100 shadow-sm border-0" style="background-color: #FFF6E0;">
+                            <div class="card-body p-4">
+                                <h5 class="text-danger">International Patient</h5>
+                                <h4 class="text-primary fw-bold mb-3">International Helpdesk</h4>
+                                <p class="text-muted">Our international patient helpdesk ensures seamless healthcare
+                                    with
+                                    support in enquiries, appointments, and travel arrangements. Trust us for
+                                    personalized
+                                    assistance and the highest standard of care.</p>
+                                <p class="mb-1"><strong class="text-danger">Call:</strong>+91 78089 82006 / +91 79798
+                                    64304
+                                </p>
+                                <p class="mb-4"><strong class="text-danger">Email:</strong>
+                                    nilam23192@gmail.com</p>
+                                <div class="d-grid">
+                                    <button class="btn btn-outline-primary ">Enquire Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Process Section End -->
+        <!-- About Section Start -->
+        <section class="about-section py-5 bg-light">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col">
+                        <img src="assets/images/extras/image-full.png" alt="Peerless Hospital"
+                            class="img-fluid rounded-4 ">
+                    </div>
+                </div>
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5 text-center text-lg-start">
+                        <h6 class="text-uppercase text-danger fw-semibold mb-2">Welcome to Peerless Hospital</h6>
+                        <h2 class="fw-bold text-primary mb-3">32 Years of Experience<br>in Serving Mankind</h2>
+                        <a href="about.html"
+                            class="btn btn-outline-warning text-dark fw-semibold px-4 py-2 mt-2 rounded-pill shadow-sm">
+                            Read More
+                        </a>
+                    </div>
+                    <div class="col-lg-7">
+                        <p class="text-muted fs-6 mb-3">
+                            For close to a hundred years, the Peerless name has been synonymous with trust—earned and
+                            upheld
+                            by generations committed to giving more to society than they take for sustenance.
+                        </p>
+                        <p class="text-muted fs-6">
+                            Peerless Hospital & <span class="text-success">Dr Nilam Kumari</span> Research Centre, a
+                            500-bed
+                            multi-specialty corporate hospital,
+                            stands as a beacon of selfless, ethical healthcare service. Located in Eastern India, it
+                            continues to set standards as a world-class facility, driven by some of the country’s most
+                            acclaimed medical experts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section End -->
+        <!-- Patient Services stt  -->
+        <section style="background-color: #E2EAFE;">
+            <div class="container py-5">
+                <h5 class="highlight-title">Why Choose Us ------></h5>
+                <h2 class="fw-bold text-primary mb-4">Patient Services</h2>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card p-4 bg-white">
+                            <div class="text-center">
+                                <img src="https://img.icons8.com/ios-filled/50/fa314a/user-folder.png"
+                                    alt="Patient Info" class="card-icon">
+                            </div>
+                            <h5 class="fw-bold text-primary">Patient Info</h5>
+                            <p class="text-muted mb-0">Patient Guide, International Patient, Inpatient Payment, Reports
+                                Download, List of Empanelled Corporates and TPAs.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-4 bg-white">
+                            <div class="text-center">
+                                <img src="https://img.icons8.com/ios-filled/50/fa314a/calendar.png" alt="Appointments"
+                                    class="card-icon">
+                            </div>
+                            <h5 class="fw-bold text-primary">Appointments</h5>
+                            <p class="text-muted mb-0">Online Appointment, Appointment Request, Teleconsultation,
+                                Appointment by Phone.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-4 bg-white">
+                            <div class="text-center">
+                                <img src="https://img.icons8.com/ios-filled/50/fa314a/ambulance.png" alt="24/7 Services"
+                                    class="card-icon">
+                            </div>
+                            <h5 class="fw-bold text-primary">24/7 Services</h5>
+                            <p class="text-muted mb-0">Emergency and Trauma, Ambulance Service, Blood Centre,
+                                Laboratory,
+                                Radiology, Operation Theatre, Pharmacy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Patient Services end  -->
+        <!-- International Patient stt  -->
+        <section>
+            <div class="container py-5">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <img src="assets/images/extras/International .png" class="img-fluid rounded"
+                                    alt="Image 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="text-danger fw-semibold mb-1">International Patient</p>
+                        <h4 class="fw-bold text-primary">Facilities for International Patients</h4>
+
+                        <div class="row mt-4 g-3">
+                            <div class="col-6">
+                                <div class="bg-light text-danger p-3 rounded">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-clipboard-check fs-4 me-2"></i>
+                                        <div>
+                                            <div class="fw-bold">Health Check-up</div>
+                                            <div>Packages</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="bg-light text-danger p-3 rounded">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-car-front-fill fs-4 me-2"></i>
+                                        <div>
+                                            <div class="fw-bold">Airport Pick Up</div>
+                                            <div>and Drop</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="bg-light text-danger p-3 rounded">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-globe2 fs-4 me-2"></i>
+                                        <div>
+                                            <div class="fw-bold">Travel Desk /</div>
+                                            <div>Visa Assistance</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="bg-light text-danger p-3 rounded">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-person-badge fs-4 me-2"></i>
+                                        <div>
+                                            <div class="fw-bold">Dedicated</div>
+                                            <div>Relationship Managers</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-light border rounded p-3 mt-4">
+                            <p class="mb-1 text-danger fw-semibold">International Helpdesk :</p>
+                            <p class="mb-0">+91 78089 82006 / nilam23192@gmail.com</p>
+                        </div>
+                        <a href="#" class="btn btn-outline-warning text-dark fw-semibold mt-3 px-4">Know More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- International Patient end  -->
+
+        <!-- doctor sections Start -->
+        <section class="position-relative py-5" style="background-color: rgb(213, 235, 255);">
+            <div id="carouselDoctors" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselDoctors" data-bs-slide-to="0" class="active"
+                        aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselDoctors" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row justify-content-center g-4">
+                                <div class="col-12 col-sm-6 col-md-3 text-center">
+                                    <img src="assets/images/doctor image/1.png" class="rounded-circle img-fluid"
+                                        alt="Doctor 1" style="width: 200px; height: 200px; object-fit: cover;">
+                                    <h5 class="mt-3">Dr. SOUMIK CHAUDHURI</h5>
+                                    <p>Cardiology</p>
+                                    <button class="btn btn-outline-warning">View Details</button>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 text-center">
+                                    <img src="assets/images/doctor image/2.png" class="rounded-circle img-fluid"
+                                        alt="Doctor 2" style="width: 200px; height: 200px; object-fit: cover;">
+                                    <h5 class="mt-3">Dr. KALYAN KUMAR GANGOPADHYAY</h5>
+                                    <p>Diabetology & Endocrinology</p>
+                                    <button class="btn btn-outline-warning">View Details</button>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 text-center">
+                                    <img src="assets/images/doctor image/3.png" class="rounded-circle img-fluid"
+                                        alt="Doctor 3" style="width: 200px; height: 200px; object-fit: cover;">
+                                    <h5 class="mt-3">Dr. KANKANA RANA</h5>
+                                    <p>General Surgery</p>
+                                    <button class="btn btn-outline-warning">View Details</button>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 text-center">
+                                    <img src="assets/images/doctor image/4.png" class="rounded-circle img-fluid"
+                                        alt="Doctor 4" style="width: 200px; height: 200px; object-fit: cover;">
+                                    <h5 class="mt-3">Dr. ASIM KUMAR PAL</h5>
+                                    <p>General Medicine</p>
+                                    <button class="btn btn-outline-warning">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row justify-content-center g-4">
+                                <div class="col-12 col-sm-6 col-md-3 text-center">
+                                    <img src="assets/images/doctor image/5.png" class="rounded-circle img-fluid"
+                                        alt="Doctor 5" style="width: 200px; height: 200px; object-fit: cover;">
+                                    <h5 class="mt-3">Dr. Prteem Kumar</h5>
+                                    <p>Specialty</p>
+                                    <button class="btn btn-outline-warning">View Details</button>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 text-center">
+                                    <img src="assets/images/doctor image/6.png" class="rounded-circle img-fluid"
+                                        alt="Doctor 6" style="width: 200px; height: 200px; object-fit: cover;">
+                                    <h5 class="mt-3">Dr. Vishal Kumar</h5>
+                                    <p>Specialty</p>
+                                    <button class="btn btn-outline-warning">View Details</button>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 text-center">
+                                    <img src="assets/images/doctor image/7.png" class="rounded-circle img-fluid"
+                                        alt="Doctor 7" style="width: 200px; height: 200px; object-fit: cover;">
+                                    <h5 class="mt-3">Dr. Rajput Jii</h5>
+                                    <p>Specialty</p>
+                                    <button class="btn btn-outline-warning">View Details</button>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 text-center">
+                                    <img src="assets/images/doctor image/8.jpg" class="rounded-circle img-fluid"
+                                        alt="Doctor 8" style="width: 200px; height: 200px; object-fit: cover;">
+                                    <h5 class="mt-3">Dr. Nilam Kumari</h5>
+                                    <p>Queen of My Heart ❤️</p>
+                                    <a class="btn btn-outline-warning"  target="_blank" href="assets/images/doctor image/8.jpg">View
+                                        Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDoctors"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDoctors"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- doctor sections End -->
+        <!-- CaseStudy sections stt -->
+        <section style="background-color: aliceblue;">
+            <div class="container">
+                <div class="text-danger mb-2 fs-3">Case Study ---> </div>
+                <h3 class="section-title">Rare Case and Infocus</h3>
+                <div class="row mt-4">
+                    <div class="col-md-6 mb-4">
+                        <div class="hover-card rounded shadow">
+                            <img src="assets/images/extras/caseStudy1.png" alt="Rare Case">
+                            <div class="hover-overlay">
+                                <div>
+                                    <h5>Chemotherapy Induced Subacute Cutaneous Lupus Erythematosus</h5>
+                                    <button class="hover-btn">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-primary fw-bold text-center fs-1">Rare Case</div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="hover-card rounded shadow">
+                            <img src="assets/images/extras/caseStydy2.png" alt="Infocus">
+                            <div class="hover-overlay ">
+                                <div>
+                                    <h5>Heart Care – Cardiology & Cardiothoracic Surgery</h5>
+                                    <button class="hover-btn">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-primary fw-bold text-center fs-1">Infocus</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CaseStudy sections End -->
+        <!-- image mid section st  -->
+        <div>
+            <img src="assets/images/extras/mid sections .png" alt="" width="100%">
+        </div>
+        <!-- image mid section end  -->
+        <!-- Testimonials Section Start -->
+        <section class="py-5" style="background-color: aliceblue;">
+            <div class="container">
+                <div class="row shadow-lg p-4 rounded bg-white">
+                    <div class="col-md-5 mb-4">
+                        <h6 class="text-danger fs-4">Testimonials ---> </h6>
+                        <h2 class="fw-bold text-primary">What Our Patient Says</h2>
+                        <p class="text-muted">
+                            A chorus of gratitude, sharing experiences that highlight exceptional care, compassion and
+                            medical excellence.
+                        </p>
+                        <button class="btn btn-outline-warning text-dark fw-bold px-4">View All</button>
+                    </div>
+                    <div class="col-md-7">
+                        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel"
+                            data-bs-interval="5000" data-bs-pause="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <div class="p-4 rounded shadow-sm" style="background-color: #ffb2ff;">
+                                                <div class="fs-1 text-danger mb-3">❝</div>
+                                                <p class="mb-5">I am admitted under Dr. Samnath Dey. He is very good &
+                                                    kind. All nursing staff are very supportive & cooperative.</p>
+                                                <div class="mt-5 pt-3 border-top text-center rounded"
+                                                    style="background-color: #FFE4E4;">
+                                                    <h6 class="text-primary fw-bold fs-5">Mr. Arpan Ghosh</h6>
+                                                    <small class="text-muted">G-Map Review</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="p-4 rounded shadow-sm" style="background-color: #608dff;">
+                                                <div class="fs-1 text-danger mb-3">❝</div>
+                                                <p>An outstanding experience. Medical services with humane and ethical
+                                                    touch. I wish this institute to be a torch bearer for others.</p>
+                                                <div class="mt-5 pt-3 border-top text-center rounded"
+                                                    style="background-color: #FFE4E4;">
+                                                    <h6 class="text-primary fw-bold fs-5">Mr. Surajit Kar Purkayastha
+                                                    </h6>
+                                                    <small class="text-muted">DG & IGP, CID, West Bengal</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <div class="p-4 rounded shadow-sm" style="background-color: #90ffa6;">
+                                                <div class="fs-1 text-danger mb-3">❝</div>
+                                                <p>Wonderful care! Doctors and staff treat every patient with kindness.
+                                                    The facility is clean and welcoming.</p>
+                                                <div class="mt-5 pt-3 border-top text-center rounded"
+                                                    style="background-color: #FFE4E4;">
+                                                    <h6 class="text-primary fw-bold fs-5">Mrs. Rina Banerjee</h6>
+                                                    <small class="text-muted">Google Review</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="p-4 rounded shadow-sm" style="background-color: #e9ff5c;">
+                                                <div class="fs-1 text-danger mb-3">❝</div>
+                                                <p>The doctors were thorough and took the time to explain everything.
+                                                    Highly recommended hospital for all.</p>
+                                                <div class="mt-5 pt-3 border-top text-center rounded"
+                                                    style="background-color: #FFE4E4;">
+                                                    <h6 class="text-primary fw-bold fs-5">Mr. Deepak Saha</h6>
+                                                    <small class="text-muted">Health Card User</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-3">
+                                <button class="carousel-control-prev btn btn-outline-primary me-2" type="button"
+                                    data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next btn btn-outline-primary" type="button"
+                                    data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials Section End -->
+        <!-- Keeping You Well start -->
+        <section class="p-4" style="background-color: #E4EDFF;">
+            <div class="container">
+                <div class="row align-items-center mb-4">
+                    <div class="col-md-6">
+                        <p class="text-danger fs-3 mb-1">Keeping You Well ---> </p>
+                        <h4 class="fw-bold fs-4">Recent Blogs</h4>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="#" class="btn btn-outline-primary">View All</a>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow">
+                            <img src="assets/images/extras/keepS1.png" class="card-img-top" alt="Asthma Blog">
+                            <div class="card-body">
+                                <small class="text-muted"><i class="bi bi-clock"></i> 6th May,2025 &nbsp; <i
+                                        class="bi bi-folder"></i> Health Care</small>
+                                <h5 class="card-title mt-2 fw-bold">Make Inhaled Treatments Accessible for All</h5>
+                                <p class="card-text">Every year, on the first Tuesday of May, World Asthma Day is
+                                    celebrated. This year it is being celebrated on 6th May. The theme for World Asthma
+                                    Day 2025 is "Make Inhaled Treatments Accessible for All"...</p>
+                                <a href="#" class="btn btn-outline-warning">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow">
+                            <img src="assets/images/extras/keepS2.png" class="card-img-top" alt="Cervical Cancer Blog">
+                            <div class="card-body">
+                                <small class="text-muted"><i class="bi bi-clock"></i> 30th April,2025 &nbsp; <i
+                                        class="bi bi-folder"></i> Health Care</small>
+                                <h5 class="card-title mt-2 fw-bold">Cervical Cancer: What Are the Risk Factors and...
+                                </h5>
+                                <p class="card-text">Cervical cancer is one of the most preventable types of cancer, yet
+                                    it remains a major health concern for women worldwide. The key to beating it is
+                                    awareness — understanding the risk factors and spotting early symptoms...</p>
+                                <a href="#" class="btn btn-outline-warning">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow">
+                            <img src="assets/images/extras/keepS3.png" class="card-img-top" alt="Heart Surgery Blog">
+                            <div class="card-body">
+                                <small class="text-muted"><i class="bi bi-clock"></i> 24th April,2025 &nbsp; <i
+                                        class="bi bi-folder"></i> Health Care</small>
+                                <h5 class="card-title mt-2 fw-bold">Benefits of minimally invasive direct coronary...
+                                </h5>
+                                <p class="card-text">Coronary artery bypass grafting (CABG) is a procedure that is used
+                                    to treat coronary artery blockages. The life-saving treatment can help blood flow
+                                    normally to the heart, which might have been disrupted because of the...</p>
+                                <a href="#" class="btn btn-outline-warning">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Keeping You Well end -->
+        <!-- Contact Us Start -->
+        <section class="py-5">
+            <div class="container">
+                <!-- Section Heading -->
+                <div class="mb-4">
+                    <p class="text-danger fw-bold fs-2">Contact Us ---> </p>
+                    <h3 class="fw-bold text-primary">Reach Out to Us</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="bg-primary text-white p-4 rounded-3">
+                            <h5 class="fw-bold mb-3">Get In Touch With Us</h5>
+                            <p class="mb-4">Please fill out the form below for any queries and we will get back to you
+                                within 24–48 hours.</p>
+                            <form action="/submit-contact" method="POST" id="contactForm">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control rounded-pill" placeholder="Full Name"
+                                        name="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control rounded-pill" placeholder="Email Id"
+                                        name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control rounded-pill" placeholder="Phone No"
+                                        name="phone">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control rounded-pill"
+                                        placeholder="Enter Your Subject" name="subject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control rounded" rows="4" placeholder="Messages"
+                                        name="message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-outline-warning rounded-pill">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-5 mt-4 mt-md-0">
+                        <div class="ps-md-4">
+                            <h5 class="fw-bold mb-3 fs-3 text-primary">Connect</h5>
+                            <p><i class="bi bi-telephone-fill text-danger me-2"></i>+91 78089 82006</p>
+                            <p><i class="bi bi-envelope-fill text-danger me-2"></i>nilam23192@gmail.com</p>
+                            <p><i class="bi bi-geo-alt-fill text-danger me-2"></i>Katihar Bihar India</p>
+
+                            <h5 class="fw-bold mt-4 text-primary">Follow Us</h5>
+                            <div class="d-flex gap-2 mt-2">
+                                <a href="#" class="btn btn-danger rounded-circle"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="btn btn-danger rounded-circle"><i class="bi bi-youtube"></i></a>
+                                <a href="#" class="btn btn-danger rounded-circle"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="btn btn-danger rounded-circle"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#" class="btn btn-danger rounded-circle"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="btn btn-danger rounded-circle"><i class="bi bi-snapchat"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Us End -->
+    </main>
+    <!-- main end  -->
+    <!-- Footer Start -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-md-left">
+            <div class="row text-md-left">
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 text-center">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Patients Info</h5>
+                    <p><a href="#" class="footer-link">Find a Doctor</a></p>
+                    <p><a href="#" class="footer-link">Inpatient Payment</a></p>
+                    <p><a href="#" class="footer-link">Reports Download</a></p>
+                    <p><a href="#" class="footer-link">Enquiry</a></p>
+                    <p><a href="#" class="footer-link">Feedback</a></p>
+                    <p><a href="#" class="footer-link">International Patient</a></p>
+                    <p><a href="#" class="footer-link">Organ Transplant Compliance</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 text-center">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Other Links</h5>
+                    <p><a href="#" class="footer-link">Contact</a></p>
+                    <p><a href="#" class="footer-link">Corporate Tie-up</a></p>
+                    <p><a href="#" class="footer-link">Career</a></p>
+                    <p><a href="#" class="footer-link">Appointment Request</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 text-center">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Resources</h5>
+                    <p><a href="#" class="footer-link">Bio Medical Waste Report</a></p>
+                    <p><a href="#" class="footer-link">Stent Prices</a></p>
+                    <p><a href="#" class="footer-link">Knee Implant Price</a></p>
+                </div>
+                <div class="col-md-12 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary fs-4 text-center">Location Brainzima
+                        Innovation</h5>
+                    <div class="ratio ratio-4x3">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.784791263712!2d87.5774064!3d25.545544600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39faa9b9b95d06ad%3A0x20dd05b7166b83a3!2sBRAINZIMA%20INNOVATION%20INSTITUTE%20%7C%20Best%20Computer%20Institute%20in%20Katihar!5e0!3m2!1sen!2sin!4v1747128384254!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Footer  End line -->
+        <div class="text-center p-3 mt-4" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2025 <span class="text-primary "><span class="text-danger fs-4">A</span>JIT❤️<span
+                    class="text-danger fs-4">N</span>ILAM</span> . All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- <script src="assets/js/custom.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
